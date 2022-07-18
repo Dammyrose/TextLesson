@@ -1,13 +1,9 @@
-//Text Lesson
-// 
-//Global Variables
+String title = "Wahoo!";
 //
-//void setup() {}//End setup()
+//CANVAS
+size (500, 600); //Portrait Mode, fits on my display
+//Population 
 //
-//void draw() {}//End draw()
+//Single Executed Code 
 //
-//void keyPressed() {}//End keyPressed
-//
-//void mousePressed() {}//End mousePressed
-//
-//End MAIN program 
+//Repeatedly Executed Code

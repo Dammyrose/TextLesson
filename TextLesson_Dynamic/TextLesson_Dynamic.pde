@@ -3,7 +3,7 @@
 // Global Variables
 //
 String title = "Wahoo!";
-String body = "I am very happy for you.";
+String body = "happy for you.";
 float titleX, titleY, titleWidth, titleHeight;
 PFont titleFont;  
 PFont bodyFont;
@@ -15,8 +15,6 @@ float xBody, yBody, widthDiameterBody, heightDiameterBody, smallerDimension, xCe
 void setup() {
   size (600, 700); //Portrait Mode, fits on my display
   //Population 
-  xCenter = width/2;
-  float yCenter = height/2;
   if ( width >= height ) {
     smallerDimension = height;
   } else {
@@ -56,12 +54,12 @@ void draw() {
   text(title, titleX, titleY, titleWidth, titleHeight);
   fill(resetDefaultInk);
   //
-  fill(purple); //Ink, hexidecimal copied from Color Selector 
-  textAlign(CENTER, TOP); // Align X&Y, see Processing.org / Reference
+  fill(red); //Ink, hexidecimal copied from Color Selector 
+  textAlign(CENTER, CENTER); // Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | Right ] & [ TOP| CENTER | BOTTOM | BASELINE]
   bodySize = 40; //Change this number until it fits 
   textFont(bodyFont, bodySize); 
-  text(xBody, yBody, widthDiameterBody, heightDiameterBody);
+  text(body, xBody*2/5, yBody*1/2, widthDiameterBody, heightDiameterBody);
   fill(resetDefaultInk);
   //
 }//End draw()
